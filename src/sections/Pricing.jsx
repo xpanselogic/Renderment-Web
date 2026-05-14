@@ -15,7 +15,7 @@ export default function Pricing() {
     ['Subcontractors',           'Contact book, assignments, amount agreed vs. paid vs. outstanding.'],
     ['Calendar',                 'Monthly grid. Auto-SMS confirmations 24 hrs before. Nothing double-booked.'],
     ['Reviews & reminders',      'Eight always-on automations: review requests, invoice nags, appointment confirms.'],
-    ['Team & roles',             'Multi-user · 4-role permissions · hide financials from the field.'],
+    ['Team & roles',             'Up to 5 staff or admin seats included (you, the owner, are free). 4 permission roles · hide financials from the field. Larger team? Contact sales.'],
     ['QuickBooks sync',          'Two-way. Invoices, customers, payments — never typed twice.'],
   ];
 
@@ -52,8 +52,11 @@ export default function Pricing() {
               <span style={{ fontFamily: fonts.serif, fontSize: 80, letterSpacing: '-0.04em', lineHeight: 1, color: C.ink }}>$149</span>
               <span style={{ fontFamily: fonts.serif, fontSize: 18, color: C.m, fontStyle: 'italic' }}>/ mo</span>
             </div>
-            <div style={{ fontSize: 13, color: C.m, fontStyle: 'italic', fontFamily: fonts.serif, marginBottom: 28 }}>
+            <div style={{ fontSize: 13, color: C.m, fontStyle: 'italic', fontFamily: fonts.serif, marginBottom: 6 }}>
               billed monthly · cancel anytime
+            </div>
+            <div style={{ fontSize: 12, color: C.m, fontFamily: fonts.body, marginBottom: 28 }}>
+              Includes the owner + up to 5 team members
             </div>
 
             <a href="https://app.renderment.com/register" style={{
@@ -90,6 +93,37 @@ export default function Pricing() {
             </div>
           </div>
         </div>
+      </div>
+
+      {/* Larger team — Contact Sales */}
+      <div style={{
+        maxWidth: 760, margin: isMobile ? '32px auto 0' : '40px auto 0',
+        background: C.paper, border: `1px dashed ${C.bDark}`, borderRadius: 12,
+        padding: isMobile ? '24px 20px' : '28px 36px',
+        display: 'flex', flexDirection: isMobile ? 'column' : 'row',
+        alignItems: isMobile ? 'stretch' : 'center', gap: isMobile ? 16 : 24,
+      }}>
+        <div style={{ flex: 1, minWidth: 0 }}>
+          <div style={{ fontFamily: fonts.serif, fontStyle: 'italic', fontSize: 22, color: C.ink, letterSpacing: '-0.01em', marginBottom: 6 }}>
+            More than 5 team members?
+          </div>
+          <div style={{ fontSize: 13.5, color: C.m, lineHeight: 1.55 }}>
+            Custom plans for larger crews — dedicated onboarding, priority support, and pricing tailored to your team size.
+          </div>
+        </div>
+        <a
+          href="mailto:sales@renderment.com?subject=Renderment%20Team%20Plan%20Inquiry&body=Hi%20Renderment%20Sales%2C%0A%0AWe%27d%20like%20to%20add%20more%20than%205%20team%20members.%20Please%20get%20in%20touch%20about%20a%20custom%20plan.%0A%0AThanks%2C%0A"
+          style={{
+            background: C.ink, color: '#fff',
+            padding: '12px 22px', borderRadius: 8, fontSize: 14, fontWeight: 600,
+            cursor: 'pointer', fontFamily: fonts.body, display: 'inline-flex',
+            alignItems: 'center', justifyContent: 'center', gap: 8,
+            textDecoration: 'none', whiteSpace: 'nowrap', boxSizing: 'border-box',
+          }}
+        >
+          Contact sales
+          <span style={{ fontFamily: fonts.serif, fontStyle: 'italic' }}>↗</span>
+        </a>
       </div>
 
       <div style={{ marginTop: 60, textAlign: 'center', fontFamily: fonts.serif, fontStyle: 'italic', fontSize: 16, color: C.m, maxWidth: 720, margin: '60px auto 0' }}>
