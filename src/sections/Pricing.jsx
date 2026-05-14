@@ -95,7 +95,10 @@ export default function Pricing() {
         </div>
       </div>
 
-      {/* Larger team — Contact Sales */}
+      {/* Larger team — Contact Sales. Email is shown as visible text + as
+          the clickable mailto so it works whether or not the user has a
+          desktop mail client wired up (Chrome on a corporate machine often
+          has no mailto handler and silently does nothing on click). */}
       <div style={{
         maxWidth: 760, margin: isMobile ? '32px auto 0' : '40px auto 0',
         background: C.paper, border: `1px dashed ${C.bDark}`, borderRadius: 12,
@@ -115,14 +118,19 @@ export default function Pricing() {
           href="mailto:sales@renderment.com?subject=Renderment%20Team%20Plan%20Inquiry&body=Hi%20Renderment%20Sales%2C%0A%0AWe%27d%20like%20to%20add%20more%20than%205%20team%20members.%20Please%20get%20in%20touch%20about%20a%20custom%20plan.%0A%0AThanks%2C%0A"
           style={{
             background: C.ink, color: '#fff',
-            padding: '12px 22px', borderRadius: 8, fontSize: 14, fontWeight: 600,
+            padding: '14px 22px', borderRadius: 8, fontSize: 14, fontWeight: 600,
             cursor: 'pointer', fontFamily: fonts.body, display: 'inline-flex',
-            alignItems: 'center', justifyContent: 'center', gap: 8,
-            textDecoration: 'none', whiteSpace: 'nowrap', boxSizing: 'border-box',
+            flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
+            gap: 4, textDecoration: 'none', whiteSpace: 'nowrap', boxSizing: 'border-box',
+            lineHeight: 1.2,
           }}
         >
-          Contact sales
-          <span style={{ fontFamily: fonts.serif, fontStyle: 'italic' }}>↗</span>
+          <span style={{ fontSize: 11, fontWeight: 500, opacity: 0.75, letterSpacing: '0.04em' }}>
+            EMAIL US
+          </span>
+          <span style={{ fontFamily: fonts.mono, fontSize: 13.5, fontWeight: 600 }}>
+            sales@renderment.com
+          </span>
         </a>
       </div>
 
