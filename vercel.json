@@ -3,6 +3,10 @@
   "outputDirectory": "dist",
   "cleanUrls": true,
   "trailingSlash": false,
+  "redirects": [
+    { "source": "/privacy", "destination": "https://xpanselogic.github.io/Renderment-Legal/privacy.html", "permanent": true },
+    { "source": "/terms",   "destination": "https://xpanselogic.github.io/Renderment-Legal/terms.html",   "permanent": true }
+  ],
   "headers": [
     {
       "source": "/(.*)",
