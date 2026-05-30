@@ -8,6 +8,7 @@ import Features from './sections/Features.jsx';
 import Everything from './sections/Everything.jsx';
 import Demo from './sections/Demo.jsx';
 import Pricing from './sections/Pricing.jsx';
+import Contact from './sections/Contact.jsx';
 import CTA from './sections/CTA.jsx';
 import { C, fonts } from './design/tokens.jsx';
 
@@ -69,6 +70,7 @@ export default function RendermentPage() {
       <Everything />
       <Demo />
       <Pricing />
+      <Contact />
       <CTA />
       <BackToTop />
     </div>

@@ -23,7 +23,7 @@ export default function CTA() {
         </p>
         <div style={{ marginTop: isMobile ? 32 : 42, display: 'flex', flexDirection: isMobile ? 'column' : 'row', gap: isMobile ? 12 : 14, justifyContent: 'center', alignItems: isMobile ? 'stretch' : 'center' }}>
           <a href="https://app.renderment.com/register" style={{ background: C.a, color: '#fff', padding: '17px 30px', borderRadius: 8, fontSize: 16, fontWeight: 600, cursor: 'pointer', fontFamily: fonts.body, textDecoration: 'none', display: 'inline-block', textAlign: 'center' }}>Start your trial →</a>
-          <a href="mailto:support@renderment.com?subject=Demo%20request" style={{ background: 'transparent', color: C.bg, border: `1px solid rgba(245,241,232,0.3)`, padding: '17px 28px', borderRadius: 8, fontSize: 16, fontWeight: 500, cursor: 'pointer', fontFamily: fonts.body, textDecoration: 'none', display: 'inline-block', textAlign: 'center' }}>Book a 15-min demo</a>
+          <a href="#contact" style={{ background: 'transparent', color: C.bg, border: `1px solid rgba(245,241,232,0.3)`, padding: '17px 28px', borderRadius: 8, fontSize: 16, fontWeight: 500, cursor: 'pointer', fontFamily: fonts.body, textDecoration: 'none', display: 'inline-block', textAlign: 'center' }}>Book a 15-min demo</a>
         </div>
         <div style={{ marginTop: isMobile ? 28 : 36, fontFamily: fonts.serif, fontStyle: 'italic', fontSize: 15, color: 'rgba(245,241,232,0.55)' }}>
           No credit card. No 12-month contract. No "let me transfer you to sales."

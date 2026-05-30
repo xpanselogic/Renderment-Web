@@ -56,6 +56,7 @@ export default function Nav() {
                 ['Product', '#product'],
                 ['Pricing', '#pricing'],
                 ['Customers', '#customers'],
+                ['Contact', '#contact'],
               ].map(([label, href]) => (
                 <a key={label} href={href} style={{ cursor: 'pointer', color: 'inherit', textDecoration: 'none' }}>{label}</a>
               ))}
