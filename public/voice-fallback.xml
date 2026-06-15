@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Twilio voice_fallback_url target. Twilio fetches THIS only when the primary
+  voice webhook (api.renderment.com/webhooks/twilio/voice) is unreachable —
+  Railway outage, restart, or deploy window. It is deliberately hosted on the
+  Vercel marketing site (renderment.com), NOT on api.renderment.com, so it stays
+  up when the backend is the thing that's down. Keep it a static, dependency-free
+  TwiML document. The primary handler still owns the normal missed-call → SMS
+  flow; this fallback only prevents dead air, and does NOT promise a text-back
+  because the app that would send it is offline when this fires.
+-->
+<Response>
+  <Say voice="alice">Thanks for calling Renderment. We're experiencing a brief technical issue and can't take your call right now. Please try again in a few minutes. Goodbye.</Say>
+</Response>
